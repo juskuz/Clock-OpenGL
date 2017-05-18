@@ -32,6 +32,8 @@ Place, Fifth Floor, Boston, MA  02110 - 1301  USA
 using namespace glm;
 
 float speed=0; //prędkość kątowa obrotu w radianach na sekundę
+float speed_y=0;
+float speed_clock=1;
 
 //Procedura obsługi błędów
 void error_callback(int error, const char* description) {
@@ -42,10 +44,13 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
     if (action == GLFW_PRESS) {
         if (key == GLFW_KEY_LEFT) speed=-PI;
         if (key == GLFW_KEY_RIGHT) speed=PI;
+        if (key == GLFW_KEY_UP) speed_y=PI;
+        if (key == GLFW_KEY_DOWN) speed_y=-PI;
     }
 
     if (action == GLFW_RELEASE) {
         speed=0;
+        speed_y=0;
     }
 }
 
@@ -64,7 +69,7 @@ void initOpenGLProgram(GLFWwindow* window) {
 }
 
 //Procedura rysująca zawartość sceny
-void drawScene(GLFWwindow* window,float angle) {
+void drawScene(GLFWwindow* window,float angle, float angle_y, float angle_clock) {
     //Statyczna deklaracja modeli - żeby nie były tworzone co klatkę
 
     //static Models::Cube wardrobe();
@@ -93,9 +98,8 @@ void drawScene(GLFWwindow* window,float angle) {
     mat4 I=mat4(1.0f); //Macierz jednostkowa
     mat4 Ms=I;
 
-
-
     Ms=rotate(Ms,angle,vec3(0,1,0)); // Ms to macierz wyjsciowa, jej nie zmieniamy
+    Ms=rotate(Ms,angle_y, vec3(1,0,0));
     mat4 Ms1=Ms;
 
     //ŚCIANA TYLNA
@@ -155,13 +159,26 @@ void drawScene(GLFWwindow* window,float angle) {
     glColor3d(0.95,0.95,0.95); //Kolor
     planet1.drawSolid();
 
+
     //WAHADŁO
-    Ms1=Ms;
-    Ms1=translate(Ms1, vec3 (0.0f,-1.0f,-0.6f));
-    Ms1=scale(Ms1, vec3 (0.3, 0.3, 0.01));
+    mat4 Ms2=Ms;
+    Ms2=translate(Ms2, vec3 (0.0f,0.3f,0.0f));
+    Ms2=rotate(Ms2,angle_clock,vec3(0,0,1)); // tutaj zmieniamy kąt wychylenia wahadła
+    Ms1=Ms2;
+    Ms1=translate(Ms1, vec3 (0.0f,-1.25f,-0.6f));
+    Ms1=scale(Ms1, vec3 (0.3, 0.3, 0.03));
     glLoadMatrixf(value_ptr(V*Ms1)); //Załaduj macierz model-widok
     glColor3d(1.0,1.0,0.0); //Kolor
     planet1.drawSolid();
+
+    //"LINKA" WAHADŁA
+    Ms1=Ms2;
+    Ms1=translate(Ms1, vec3 (0.0f,-0.35f,-0.6f));
+    Ms1=scale(Ms1, vec3(0.04,0.7,0.02));
+    glLoadMatrixf(value_ptr(V*Ms1));
+    //glColor3d(0.95,0.95,0.95); //Kolor szary
+    Models::cube.drawSolid();
+
 
 
 
@@ -286,13 +303,20 @@ int main(void)
 	initOpenGLProgram(window); //Operacje inicjujące
 
 	float angle=0; //Aktualny kąt obrotu obiektu
+    float angle_y=0.0f; //Aktualny kąt obrotu obiektu wokół osi y
+    float angle_clock=0;
+    int left=1;
 	glfwSetTime(0); //Wyzeruj licznik czasu
 	//Główna pętla
 	while (!glfwWindowShouldClose(window)) //Tak długo jak okno nie powinno zostać zamknięte
 	{
 	    angle+=speed*glfwGetTime(); //Powiększ kąt obrotu o szybkość obrotu razy czas, który minął od poprzedniej klatki
+        angle_y+=speed_y*glfwGetTime();
+        if(angle_clock>=0.3) left=-1;
+        else if (angle_clock<=-0.3) left=1;
+        angle_clock=angle_clock+left*speed_clock*0.8*glfwGetTime(); //left decyduje czy prawo czy lewo
 	    glfwSetTime(0); //Wyzeruj licznik czasu
-		drawScene(window,angle); //Wykonaj procedurę rysującą
+		drawScene(window,angle, angle_y, angle_clock); //Wykonaj procedurę rysującą
 		glfwPollEvents(); //Wykonaj procedury callback w zalezności od zdarzeń jakie zaszły.
 	}
 
