@@ -30,20 +30,15 @@ Place, Fifth Floor, Boston, MA  02110 - 1301  USA
 #include <lodepng.h>
 #include "constants.h"
 #include "allmodels.h"
+#include "myCube.h"
 
 GLuint tex; //Uchwyt – deklaracja globalna
-std::vector<unsigned char> image1; //Alokuj wektor do wczytania obrazka 1
-std::vector<unsigned char> image2; //Alokuj wektor do wczytania obrazka 2
-std::vector<unsigned char> image3; //Alokuj wektor do wczytania obrazka 3
-std::vector<unsigned char> image4; //Alokuj wektor do wczytania obrazka 4 (tarcza zegara)
-unsigned width1, height1, width2, height2, width3, height3, width4, height4; //Zmienne do których wczytamy wymiary obrazków
 
 using namespace glm;
 
 float aspect=1.0f; //Aktualny stosunek szerokości do wysokości okna
 float speed_x=0; //Szybkość kątowa obrotu obiektu w radianach na sekundę wokół osi x
 float speed_y=0; //Szybkość kątowa obrotu obiektu w radianach na sekundę wokół osi y
-float speed_pendulum=1;
 
 //Procedura obsługi błędów
 void error_callback(int error, const char* description) {
@@ -63,6 +58,10 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         if (key == GLFW_KEY_RIGHT) speed_y=-PI/2;
         if (key == GLFW_KEY_UP) speed_x=PI/2;
         if (key == GLFW_KEY_DOWN) speed_x=-PI/2;
+        if (key == GLFW_KEY_1) glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_NEAREST);
+        if (key == GLFW_KEY_2) glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_NEAREST);
+        if (key == GLFW_KEY_3) glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MAG_FILTER,GL_LINEAR);
+        if (key == GLFW_KEY_4) glTexParameteri(GL_TEXTURE_2D,GL_TEXTURE_MIN_FILTER,GL_LINEAR);
     }
 
     if (action == GLFW_RELEASE) {
@@ -86,151 +85,113 @@ void initOpenGLProgram(GLFWwindow* window) {
 	glEnable(GL_DEPTH_TEST); //Włącz używanie budora głębokości
 	glEnable(GL_COLOR_MATERIAL); //Włącz śledzenie kolorów przez materiał
 
-    //Wczytaj obrazki
-    unsigned error = lodepng::decode(image1, width1, height1, "img/wood1.png");
-    unsigned error2 = lodepng::decode(image2, width2, height2, "img/wood2.png");
-    unsigned error3 = lodepng::decode(image3, width3, height3, "img/metal1.png");
-    unsigned error4 = lodepng::decode(image4, width4, height4, "img/clock_222.png");
-
+	//Wczytanie i import obrazka – w initOpenGLProgram
+    //Wczytanie do pamięci komputera
+    std::vector<unsigned char> image; //Alokuj wektor do wczytania obrazka
+    unsigned width, height; //Zmienne do których wczytamy wymiary obrazka
+    //Wczytaj obrazek
+    unsigned error = lodepng::decode(image, width, height, "bricks.png");
     //Import do pamięci karty graficznej
     glGenTextures(1,&tex); //Zainicjuj jeden uchwyt
     glBindTexture(GL_TEXTURE_2D, tex); //Uaktywnij uchwyt
+    //Wczytaj obrazek do pamięci KG skojarzonej z uchwytem
+    glTexImage2D(GL_TEXTURE_2D, 0, 4, width, height, 0,
+    GL_RGBA, GL_UNSIGNED_BYTE, (unsigned char*) image.data());
 
     //Bilinear filtering
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+
+    glEnable(GL_TEXTURE_2D);
 }
 
-//Procedura rysująca zawartość sceny
-void drawScene(GLFWwindow* window,float angle_x,float angle_y, float angle_pendulum) {
-	//************Tutaj umieszczaj kod rysujący obraz******************l
+//Tablica współrzędnych wierzchołków
+float smallQuadVertices[]={
+    -1,0,0,
+    0,1,1,
+    1,0,0,
+    -1,0,0,
+    0,-1,1,
+    1,0,0,
+};
 
-    //Statyczna deklaracja modeli - żeby nie były tworzone co klatkę
-    static Models::Sphere p1(0.8,36,36); //kula wahadła
+//Tablica współrzędnych wierzchołków
+float smallQuadVertices2[]={
+
+};
+
+//Tablica kolorów wierzchołków
+float smallQuadColors[]={
+    1,0,0,
+    1,0,0,
+    1,0,0,
+    0,1,0,
+    0,1,0,
+    0,1,0,
+};
+
+//Tablica kolorów wierzchołków
+float smallQuadColors2[]={
+
+};
+
+int smallQuadVertexCount=6; //Liczba wierzchołków w tablicy
+
+
+//Procedura rysująca zawartość sceny
+void drawScene(GLFWwindow* window,float angle_x,float angle_y) {
+	//************Tutaj umieszczaj kod rysujący obraz******************l
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); //Wyczyść bufor kolorów (czyli przygotuj "płótno" do rysowania)
 
     //***Przygotowanie do rysowania****
-    mat4 P=perspective(50.0f*PI/180.0f,aspect,1.0f,50.0f); //Wylicz macierz rzutowania P
+    mat4 P=perspective(50.0f*PI/180.0f,aspect,0.01f,50.0f); //Wylicz macierz rzutowania P
     mat4 V=lookAt( //Wylicz macierz widoku
-                  vec3(0.0f,0.0f,-5.0f),
-                  vec3(0.0f,0.0f,0.0f),
+                  vec3(0.0f,1.5f,-1.5f),
+                  vec3(0.0f,1.0f,0.0f),
                   vec3(0.0f,1.0f,0.0f));
     glMatrixMode(GL_PROJECTION); //Włącz tryb modyfikacji macierzy rzutowania
     glLoadMatrixf(value_ptr(P)); //Załaduj macierz rzutowania
     glMatrixMode(GL_MODELVIEW);  //Włącz tryb modyfikacji macierzy model-widok
 
-    //Macierz wyjściowa
+    //Rysowanie kostki
     mat4 M=mat4(1.0f);
     M=rotate(M,angle_x,vec3(1.0f,0.0f,0.0f));
     M=rotate(M,angle_y,vec3(0.0f,1.0f,0.0f));
+    glLoadMatrixf(value_ptr(V*M));
+    //glColor3d(0,1,0);
 
-    //Macierz ścian
-    mat4 Ms;
+    /*
+    //ptaszek
+    glEnableClientState( GL_VERTEX_ARRAY );
+    glEnableClientState( GL_COLOR_ARRAY );
+    glVertexPointer( 3, GL_FLOAT, 0, smallQuadVertices );
+    glColorPointer( 3, GL_FLOAT, 0, smallQuadColors );
+    glDrawArrays( GL_TRIANGLES, 0, smallQuadVertexCount );
+    glDisableClientState( GL_VERTEX_ARRAY );
+    glDisableClientState( GL_COLOR_ARRAY );
+    */
 
-    //Wczytaj obrazek do pamięci KG skojarzonej z uchwytem
-    glTexImage2D(GL_TEXTURE_2D, 0, 4, width1, height1, 0,
-    GL_RGBA, GL_UNSIGNED_BYTE, (unsigned char*) image1.data());
-    glEnable(GL_TEXTURE_2D); //włączenie tekstury
+    /*
+    //kolorowa kostka
+    glEnableClientState( GL_VERTEX_ARRAY );
+    glEnableClientState( GL_COLOR_ARRAY );
+    glVertexPointer( 3, GL_FLOAT, 0, myCubeVertices );
+    glColorPointer( 3, GL_FLOAT, 0, myCubeColors );
+    glDrawArrays( GL_QUADS, 0, myCubeVertexCount );
+    glDisableClientState( GL_VERTEX_ARRAY );
+    glDisableClientState( GL_COLOR_ARRAY );
+    */
 
-    //Ściana tylna
-    Ms=M;
-    Ms=scale(Ms, vec3(0.75,1.7,0.1));
-    glLoadMatrixf(value_ptr(V*Ms));
-    Models::cube.drawSolid();
-
-    //Ściana prawa
-    Ms=M;
-    Ms=translate(Ms, vec3 (0.75f,0.0f,-0.4f));
-    Ms=scale(Ms, vec3(0.05,1.7,0.5));
-    glLoadMatrixf(value_ptr(V*Ms));
-    Models::cube.drawSolid();
-
-    //Ściana lewa
-    Ms=M;
-    Ms=translate(Ms, vec3 (-0.75f,0.0f,-0.4f));
-    Ms=scale(Ms, vec3(0.05,1.7,0.5));
-    glLoadMatrixf(value_ptr(V*Ms));
-    Models::cube.drawSolid();
-
-    //Ściana górna
-    Ms=M;
-    Ms=translate(Ms, vec3 (0.0f,1.65f,-0.4f));
-    Ms=scale(Ms, vec3(0.7,0.05,0.5));
-    glLoadMatrixf(value_ptr(V*Ms));
-    Models::cube.drawSolid();
-
-    //Ściana dolna
-    Ms=M;
-    Ms=translate(Ms, vec3 (0.0f,-1.65f,-0.4f));
-    Ms=scale(Ms, vec3(0.7,0.05,0.5));
-    glLoadMatrixf(value_ptr(V*Ms));
-    Models::cube.drawSolid();
-
-    glDisable(GL_TEXTURE_2D); //Wyłączenie tekstury
-
-    //Wczytaj obrazek do pamięci KG skojarzonej z uchwytem
-    glTexImage2D(GL_TEXTURE_2D, 0, 4, width2, height2, 0,
-    GL_RGBA, GL_UNSIGNED_BYTE, (unsigned char*) image2.data());
-    glEnable(GL_TEXTURE_2D); //włączenie tekstury
-
-    //Ściana przednia
-    Ms=M;
-    Ms=translate(Ms, vec3 (0.0f,1.0f,-0.82f));
-    Ms=scale(Ms, vec3(0.75,0.7,0.1));
-    glLoadMatrixf(value_ptr(V*Ms));
-    Models::cube.drawSolid();
-
-    glDisable(GL_TEXTURE_2D); //Wyłączenie tekstury
-
-/*
-    //Wczytaj obrazek do pamięci KG skojarzonej z uchwytem
-    glTexImage2D(GL_TEXTURE_2D, 0, 4, width3, height3, 0,
-    GL_RGBA, GL_UNSIGNED_BYTE, (unsigned char*) image3.data());
-    glEnable(GL_TEXTURE_2D); //włączenie tekstury
-*/
-    //Wczytaj obrazek do pamięci KG skojarzonej z uchwytem
-    glTexImage2D(GL_TEXTURE_2D, 0, 4, width4, height4, 0,
-    GL_RGBA, GL_UNSIGNED_BYTE, (unsigned char*) image4.data());
-    glEnable(GL_TEXTURE_2D); //włączenie tekstury
-
-    //tarcza_zegara
-    //Models::Sphere tarcza_zegara(0.6,36,36);
-    mat4 Mt=M;
-    Mt=translate(Mt, vec3 (0.0f,1.0f,-0.915f));
-    Mt=scale(Mt, vec3 (0.5, 0.5, 0.01));
-    glLoadMatrixf(value_ptr(V*Mt));
-    //glColor3d(0.95,0.95,0.95); //Kolor biały
-    Models::cube.drawSolid();
-    //tarcza_zegara.drawSolid();
-
-    glDisable(GL_TEXTURE_2D); //Wyłączenie tekstury
-    //Wczytaj obrazek do pamięci KG skojarzonej z uchwytem
-    glTexImage2D(GL_TEXTURE_2D, 0, 4, width3, height3, 0,
-    GL_RGBA, GL_UNSIGNED_BYTE, (unsigned char*) image3.data());
-    glEnable(GL_TEXTURE_2D); //włączenie tekstury
-
-    //UKŁAD "WAHADŁO-LINKA"
-    mat4 Ms2=M; //Macierz wahadła z linką -> układ "WAHADŁO -LINKA"
-    Ms2=translate(Ms2, vec3 (0.0f,0.3f,0.0f));
-    Ms2=rotate(Ms2,angle_pendulum,vec3(0,0,1)); // tutaj zmieniamy kąt wychylenia wahadła
-
-    // LINKA
-    mat4 Mw=Ms2; // pobierz dane z układu "WAHADŁO-LINKA"
-    Mw=translate(Mw, vec3 (0.0f,-0.35f,-0.6f)); //umieść linkę odpowiednio w układzie
-    Mw=scale(Mw, vec3(0.04,0.7,0.02));
-    glLoadMatrixf(value_ptr(V*Mw));
-    Models::cube.drawSolid();
-
-    // WAHADŁO
-    Mw=Ms2; // macierz kuli wahadła pobierz z układu "WAHADŁO-LINKA"
-    Mw=translate(Mw, vec3 (0.0f,-1.25f,-0.6f)); // umieszczamy kulę odpowiednio w układzie "WAHADŁO-LINKA"
-    Mw=scale(Mw, vec3 (0.3, 0.3, 0.05));
-    glLoadMatrixf(value_ptr(V*Mw)); //Załaduj macierz model-widok
-    //glColor3d(1.0,1.0,0.0); //Kolor żółty powoduje masakrę
-    p1.drawSolid(); // narysuj kulę
-
-    glDisable(GL_TEXTURE_2D); //Wyłączenie tekstury
+    //brick
+    glBindTexture(GL_TEXTURE_2D,tex);
+    glEnableClientState( GL_VERTEX_ARRAY );
+    glEnableClientState(GL_TEXTURE_COORD_ARRAY);
+    glVertexPointer( 3, GL_FLOAT, 0, myCubeVertices );
+    glTexCoordPointer( 2, GL_FLOAT, 0, myCubeTexColors);
+    glDrawArrays( GL_QUADS,12,4);
+    glDisableClientState( GL_VERTEX_ARRAY );
+    glDisableClientState(GL_TEXTURE_COORD_ARRAY);
 
     glfwSwapBuffers(window); //Przerzuć tylny bufor na przedni
 }
@@ -268,8 +229,6 @@ int main(void)
 
 	float angle_x=0.0f; //Aktualny kąt obrotu obiektu wokół osi x
 	float angle_y=0.0f; //Aktualny kąt obrotu obiektu wokół osi y
-	float angle_pendulum=0;
-	int left=1;
 	glfwSetTime(0); //Wyzeruj timer
 
 	//Główna pętla
@@ -277,11 +236,8 @@ int main(void)
 	{
 	    angle_x+=speed_x*glfwGetTime(); //Oblicz przyrost kąta obrotu i zwiększ aktualny kąt
         angle_y+=speed_y*glfwGetTime(); //Oblicz przyrost kąta obrotu i zwiększ aktualny kąt
-        if(angle_pendulum>=0.3) {left=-1;}
-        else if (angle_pendulum<=-0.3) {left=1;}
-        angle_pendulum=angle_pendulum+left*speed_pendulum*0.8*glfwGetTime(); //left decyduje czy prawo czy lewo
 	    glfwSetTime(0); //Wyzeruj timer
-		drawScene(window,angle_x,angle_y, angle_pendulum); //Wykonaj procedurę rysującą
+		drawScene(window,angle_x,angle_y); //Wykonaj procedurę rysującą
 		glfwPollEvents(); //Wykonaj procedury callback w zalezności od zdarzeń jakie zaszły.
 	}
 

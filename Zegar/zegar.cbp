@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/bio_szkielet03_win" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/bio_szkielet05_win" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -34,12 +34,14 @@
 			<Add directory="glm" />
 			<Add directory="glfw/include" />
 			<Add directory="glew/include" />
+			<Add directory="." />
 		</Compiler>
 		<Linker>
+			<Add library="glew/lib/glew32s.lib" />
 			<Add library="glfw3" />
 			<Add library="opengl32" />
 			<Add library="gdi32" />
-			<Add library="glew\lib\glew32.lib" />
+			<Add library="glu32" />
 			<Add directory="glfw/lib" />
 			<Add directory="glew/lib" />
 		</Linker>
@@ -49,6 +51,8 @@
 		<Unit filename="cube.h" />
 		<Unit filename="detailed_cube.cpp" />
 		<Unit filename="detailed_cube.h" />
+		<Unit filename="lodepng.cpp" />
+		<Unit filename="lodepng.h" />
 		<Unit filename="main_file.cpp" />
 		<Unit filename="model.cpp" />
 		<Unit filename="model.h" />
