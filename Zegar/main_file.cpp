@@ -36,7 +36,8 @@ std::vector<unsigned char> image1; //Alokuj wektor do wczytania obrazka 1
 std::vector<unsigned char> image2; //Alokuj wektor do wczytania obrazka 2
 std::vector<unsigned char> image3; //Alokuj wektor do wczytania obrazka 3
 std::vector<unsigned char> image4; //Alokuj wektor do wczytania obrazka 4 (tarcza zegara)
-unsigned width1, height1, width2, height2, width3, height3, width4, height4; //Zmienne do których wczytamy wymiary obrazków
+std::vector<unsigned char> image5; //Alokuj wektor do wczytania obrazka 5 (tło)
+unsigned width1, height1, width2, height2, width3, height3, width4, height4, width5, height5; //Zmienne do których wczytamy wymiary obrazków
 
 using namespace glm;
 
@@ -91,6 +92,7 @@ void initOpenGLProgram(GLFWwindow* window) {
     unsigned error2 = lodepng::decode(image2, width2, height2, "img/wood2.png");
     unsigned error3 = lodepng::decode(image3, width3, height3, "img/metal1.png");
     unsigned error4 = lodepng::decode(image4, width4, height4, "img/clock_222.png");
+    unsigned error5 = lodepng::decode(image5, width5, height5, "img/gray_bricks.png"); // blue-background.png
 
     //Import do pamięci karty graficznej
     glGenTextures(1,&tex); //Zainicjuj jeden uchwyt
@@ -107,6 +109,8 @@ void drawScene(GLFWwindow* window,float angle_x,float angle_y, float angle_pendu
 
     //Statyczna deklaracja modeli - żeby nie były tworzone co klatkę
     static Models::Sphere p1(0.8,36,36); //kula wahadła
+    //static Models::Sphere p2(0.8,400,400); //kula wahadła
+
 
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT); //Wyczyść bufor kolorów (czyli przygotuj "płótno" do rysowania)
 
@@ -124,6 +128,19 @@ void drawScene(GLFWwindow* window,float angle_x,float angle_y, float angle_pendu
     mat4 M=mat4(1.0f);
     M=rotate(M,angle_x,vec3(1.0f,0.0f,0.0f));
     M=rotate(M,angle_y,vec3(0.0f,1.0f,0.0f));
+
+    // TŁO
+    //Wczytaj obrazek do pamięci KG skojarzonej z uchwytem
+    glTexImage2D(GL_TEXTURE_2D, 0, 4, width5, height5, 0,
+    GL_RGBA, GL_UNSIGNED_BYTE, (unsigned char*) image5.data());
+    glEnable(GL_TEXTURE_2D); //włączenie tekstury
+
+    mat4 M_t=M; // macierz tła skopiuj z głównej macierzy
+    M_t=scale(M_t, vec3 (20, 20, 20)); // powiększa odpowiednio
+    glLoadMatrixf(value_ptr(V*M_t)); //Załaduj macierz model-widok
+    //p2.drawSolid(); // narysuj kulę
+    Models::cube.drawSolid();
+    glDisable(GL_TEXTURE_2D); //Wyłączenie tekstury
 
     //Macierz ścian
     mat4 Ms;
