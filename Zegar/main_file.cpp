@@ -82,8 +82,9 @@ void initOpenGLProgram(GLFWwindow* window) {
 
 	glClearColor(0,0,0,1); //Ustaw kolor czyszczenia ekranu
 
-	//glEnable(GL_LIGHTING); //Włącz tryb cieniowania
+	glEnable(GL_LIGHTING); //Włącz tryb cieniowania
 	glEnable(GL_LIGHT0); //Włącz zerowe źródło światła
+	//glEnable(GL_LIGHT1);
 	glEnable(GL_DEPTH_TEST); //Włącz używanie budora głębokości
 	glEnable(GL_COLOR_MATERIAL); //Włącz śledzenie kolorów przez materiał
 
@@ -226,6 +227,17 @@ void drawScene(GLFWwindow* window,float angle_x,float angle_y, float angle_pendu
     glTexImage2D(GL_TEXTURE_2D, 0, 4, width3, height3, 0,
     GL_RGBA, GL_UNSIGNED_BYTE, (unsigned char*) image3.data());
     glEnable(GL_TEXTURE_2D); //włączenie tekstury
+
+    //wskazówki zegara
+    Mt=M;
+    Mt=translate(Mt, vec3 (-0.2f,1.0f,-0.918f));
+    Mt=rotate(Mt,angle_pendulum*2,vec3(0,0,1)); // tutaj zmieniamy kąt wychylenia wahadła
+
+    mat4 Mt2=Mt;
+    //Mt2=translate(Mt2, vec3 (-0.2f,1.0f,-0.918f));
+    Mt2=scale(Mt2, vec3(0.18,0.01,0.01));
+    glLoadMatrixf(value_ptr(V*Mt2));
+    Models::cube.drawSolid();
 
     //UKŁAD "WAHADŁO-LINKA"
     mat4 Ms2=M; //Macierz wahadła z linką -> układ "WAHADŁO -LINKA"
