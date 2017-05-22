@@ -105,7 +105,7 @@ void initOpenGLProgram(GLFWwindow* window) {
 }
 
 //Procedura rysująca zawartość sceny
-void drawScene(GLFWwindow* window,float angle_x,float angle_y, float angle_pendulum) {
+void drawScene(GLFWwindow* window,float angle_x,float angle_y, float angle_pendulum, float angle_clock) {
 	//************Tutaj umieszczaj kod rysujący obraz******************l
 
     //Statyczna deklaracja modeli - żeby nie były tworzone co klatkę
@@ -229,13 +229,25 @@ void drawScene(GLFWwindow* window,float angle_x,float angle_y, float angle_pendu
     glEnable(GL_TEXTURE_2D); //włączenie tekstury
 
     //wskazówki zegara
+    //minutowa
     Mt=M;
-    Mt=translate(Mt, vec3 (-0.2f,1.0f,-0.918f));
-    Mt=rotate(Mt,angle_pendulum*2,vec3(0,0,1)); // tutaj zmieniamy kąt wychylenia wahadła
+    Mt=translate(Mt, vec3 (-0.0f,1.0f,-0.918f));
+    Mt=rotate(Mt,angle_clock,vec3(0,0,1)); // tutaj zmieniamy kąt wychylenia wahadła
 
     mat4 Mt2=Mt;
-    //Mt2=translate(Mt2, vec3 (-0.2f,1.0f,-0.918f));
-    Mt2=scale(Mt2, vec3(0.18,0.01,0.01));
+    Mt2=translate(Mt2, vec3 (0.0f,0.2f,0.0f));
+    Mt2=scale(Mt2, vec3(0.01,0.18,0.01));
+    glLoadMatrixf(value_ptr(V*Mt2));
+    Models::cube.drawSolid();
+
+    //wskazówka godzinowa
+    Mt=M;
+    Mt=translate(Mt, vec3 (-0.0f,1.0f,-0.918f));
+    Mt=rotate(Mt,angle_clock/12,vec3(0,0,1)); // tutaj zmieniamy kąt wychylenia wahadła
+
+    Mt2=Mt;
+    Mt2=translate(Mt2, vec3 (-0.1f,0.0f,0.0f));
+    Mt2=scale(Mt2, vec3(0.10,0.01,0.01));
     glLoadMatrixf(value_ptr(V*Mt2));
     Models::cube.drawSolid();
 
@@ -298,6 +310,7 @@ int main(void)
 	float angle_x=0.0f; //Aktualny kąt obrotu obiektu wokół osi x
 	float angle_y=0.0f; //Aktualny kąt obrotu obiektu wokół osi y
 	float angle_pendulum=0;
+	float angle_clock=0;
 	int left=1;
 	glfwSetTime(0); //Wyzeruj timer
 
@@ -306,11 +319,14 @@ int main(void)
 	{
 	    angle_x+=speed_x*glfwGetTime(); //Oblicz przyrost kąta obrotu i zwiększ aktualny kąt
         angle_y+=speed_y*glfwGetTime(); //Oblicz przyrost kąta obrotu i zwiększ aktualny kąt
+        angle_clock+=speed_pendulum*glfwGetTime();
+        //if (int(angle_clock)%2==0) {left=-1;}
+        //else if (int(angle_clock)%2==1) {left=1;}
         if(angle_pendulum>=0.3) {left=-1;}
         else if (angle_pendulum<=-0.3) {left=1;}
-        angle_pendulum=angle_pendulum+left*speed_pendulum*0.8*glfwGetTime(); //left decyduje czy prawo czy lewo
+        angle_pendulum=(angle_pendulum)+left*speed_pendulum*0.8*glfwGetTime(); //left decyduje czy prawo czy lewo
 	    glfwSetTime(0); //Wyzeruj timer
-		drawScene(window,angle_x,angle_y, angle_pendulum); //Wykonaj procedurę rysującą
+		drawScene(window,angle_x,angle_y, angle_pendulum, angle_clock); //Wykonaj procedurę rysującą
 		glfwPollEvents(); //Wykonaj procedury callback w zalezności od zdarzeń jakie zaszły.
 	}
 
