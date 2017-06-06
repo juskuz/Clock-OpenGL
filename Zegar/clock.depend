@@ -1,0 +1,3556 @@
+# depslib dependency file v1.0
+1496164108 source:c:\users\pawe許desktop\clock\zegar\cube.cpp
+	"cube.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\cube.h
+	"model.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\model.h
+	<vector>
+	<glm/glm.hpp>
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\precision.hpp
+	"setup.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\_swizzle.hpp
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\_swizzle_func.hpp
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec2.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec3.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec4_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat2x3.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat2x4.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat3x2.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat3x4.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat4x2.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat4x3.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_mat4x4_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_vec1.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_vector_relational_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\simd\exponential.h
+	"platform.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\simd\common.h
+	"platform.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\simd\geometric.h
+	"common.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_trigonometric_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\common.hpp
+	"detail/func_common.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\type_half.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_packing_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\simd\integer.h
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glfw\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\constants.h
+
+1496164108 source:c:\users\pawe許desktop\clock\zegar\detailed_cube.cpp
+	"detailed_cube.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\detailed_cube.h
+	"model.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\zegar\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1496186589 source:c:\users\pawe許desktop\clock\zegar\main_file.cpp
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<lodepng.h>
+	"constants.h"
+	"allmodels.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\constants.inl
+	<limits>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\quaternion_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\type_ptr.inl
+	<cstring>
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\glm\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\allmodels.h
+	"cube.h"
+	"detailed_cube.h"
+	"sphere.h"
+	"teapot.h"
+	"torus.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\sphere.h
+	"model.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\teapot.h
+	"model.h"
+
+1496164108 c:\users\pawe許desktop\clock\zegar\torus.h
+	"model.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\zegar\model.cpp
+	"model.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\zegar\sphere.cpp
+	"sphere.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\zegar\teapot.cpp
+	"teapot.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\zegar\torus.cpp
+	"torus.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\cube.cpp
+	"cube.h"
+
+1496164108 c:\users\pawe許desktop\clock\cube.h
+	"model.h"
+
+1496164108 c:\users\pawe許desktop\clock\model.h
+	<vector>
+	<glm/glm.hpp>
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\precision.hpp
+	"setup.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\_swizzle.hpp
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\_swizzle_func.hpp
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec2.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec3.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec4_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat2x3.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat2x4.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat3x2.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat3x4.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat4x2.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat4x3.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_mat4x4_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_vec1.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_vector_relational_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\simd\exponential.h
+	"platform.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\simd\common.h
+	"platform.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\simd\geometric.h
+	"common.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_trigonometric_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\common.hpp
+	"detail/func_common.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\type_half.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_packing_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\simd\integer.h
+
+1496164108 c:\users\pawe許desktop\clock\glfw\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1496164108 c:\users\pawe許desktop\clock\constants.h
+
+1496164108 source:c:\users\pawe許desktop\clock\detailed_cube.cpp
+	"detailed_cube.h"
+
+1496164108 c:\users\pawe許desktop\clock\detailed_cube.h
+	"model.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1496164108 c:\users\pawe許desktop\clock\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\model.cpp
+	"model.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\sphere.cpp
+	"sphere.h"
+
+1496164108 c:\users\pawe許desktop\clock\sphere.h
+	"model.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\teapot.cpp
+	"teapot.h"
+
+1496164108 c:\users\pawe許desktop\clock\teapot.h
+	"model.h"
+
+1496164108 source:c:\users\pawe許desktop\clock\torus.cpp
+	"torus.h"
+
+1496164108 c:\users\pawe許desktop\clock\torus.h
+	"model.h"
+
+1496234544 source:c:\users\pawe許desktop\clock\main_file.cpp
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<lodepng.h>
+	"constants.h"
+	"allmodels.h"
+
+1496164108 c:\users\pawe許desktop\clock\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\constants.inl
+	<limits>
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\quaternion_simd.inl
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\type_ptr.inl
+	<cstring>
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1496164108 c:\users\pawe許desktop\clock\glm\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1496164108 c:\users\pawe許desktop\clock\allmodels.h
+	"cube.h"
+	"detailed_cube.h"
+	"sphere.h"
+	"teapot.h"
+	"torus.h"
+
+1496167708 source:c:\users\dom\desktop\clock(1)\clock\cube.cpp
+	"cube.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\cube.h
+	"model.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\model.h
+	<vector>
+	<glm/glm.hpp>
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\precision.hpp
+	"setup.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\_swizzle.hpp
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\_swizzle_func.hpp
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec2.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec3.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec4_simd.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat2x3.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat2x4.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat3x2.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat3x4.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat4x2.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat4x3.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_mat4x4_simd.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_vec1.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_vector_relational_simd.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\simd\exponential.h
+	"platform.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\simd\common.h
+	"platform.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\simd\geometric.h
+	"common.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_trigonometric_simd.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\common.hpp
+	"detail/func_common.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\type_half.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_packing_simd.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\simd\integer.h
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glfw\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\constants.h
+
+1496167708 source:c:\users\dom\desktop\clock(1)\clock\detailed_cube.cpp
+	"detailed_cube.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\detailed_cube.h
+	"model.h"
+
+1496167708 source:c:\users\dom\desktop\clock(1)\clock\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1496259953 source:c:\users\dom\desktop\clock(1)\clock\main_file.cpp
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<lodepng.h>
+	"constants.h"
+	"allmodels.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\constants.inl
+	<limits>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\quaternion_simd.inl
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\type_ptr.inl
+	<cstring>
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\glm\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\allmodels.h
+	"cube.h"
+	"detailed_cube.h"
+	"sphere.h"
+	"teapot.h"
+	"torus.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\sphere.h
+	"model.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\teapot.h
+	"model.h"
+
+1496167708 c:\users\dom\desktop\clock(1)\clock\torus.h
+	"model.h"
+
+1496167708 source:c:\users\dom\desktop\clock(1)\clock\model.cpp
+	"model.h"
+
+1496167708 source:c:\users\dom\desktop\clock(1)\clock\sphere.cpp
+	"sphere.h"
+
+1496167708 source:c:\users\dom\desktop\clock(1)\clock\teapot.cpp
+	"teapot.h"
+
+1496167708 source:c:\users\dom\desktop\clock(1)\clock\torus.cpp
+	"torus.h"
+
+1496652652 source:c:\users\student\desktop\clock\clock\cube.cpp
+	"cube.h"
+
+1496652652 c:\users\student\desktop\clock\clock\cube.h
+	"model.h"
+
+1496652652 c:\users\student\desktop\clock\clock\model.h
+	<vector>
+	<glm/glm.hpp>
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\precision.hpp
+	"setup.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\_swizzle.hpp
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\_swizzle_func.hpp
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec2.inl
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec3.inl
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec4_simd.inl
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat2x3.inl
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat2x4.inl
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat3x2.inl
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat3x4.inl
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat4x2.inl
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat4x3.inl
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_mat4x4_simd.inl
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1496652652 c:\users\student\desktop\clock\clock\glm\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_vec1.inl
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_vector_relational_simd.inl
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\simd\exponential.h
+	"platform.h"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\simd\common.h
+	"platform.h"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\simd\geometric.h
+	"common.h"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_trigonometric_simd.inl
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\common.hpp
+	"detail/func_common.hpp"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\type_half.inl
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_packing_simd.inl
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1496652657 c:\users\student\desktop\clock\clock\glm\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1496652656 c:\users\student\desktop\clock\clock\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1496652653 c:\users\student\desktop\clock\clock\glm\glm\simd\integer.h
+
+1496652658 c:\users\student\desktop\clock\clock\glfw\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1496652652 c:\users\student\desktop\clock\clock\constants.h
+
+1496652652 source:c:\users\student\desktop\clock\clock\detailed_cube.cpp
+	"detailed_cube.h"
+
+1496652652 c:\users\student\desktop\clock\clock\detailed_cube.h
+	"model.h"
+
+1496652652 source:c:\users\student\desktop\clock\clock\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1496652652 c:\users\student\desktop\clock\clock\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1496652652 source:c:\users\student\desktop\clock\clock\model.cpp
+	"model.h"
+
+1496652652 source:c:\users\student\desktop\clock\clock\sphere.cpp
+	"sphere.h"
+
+1496652652 c:\users\student\desktop\clock\clock\sphere.h
+	"model.h"
+
+1496652652 source:c:\users\student\desktop\clock\clock\teapot.cpp
+	"teapot.h"
+
+1496652652 c:\users\student\desktop\clock\clock\teapot.h
+	"model.h"
+
+1496652652 source:c:\users\student\desktop\clock\clock\torus.cpp
+	"torus.h"
+
+1496652652 c:\users\student\desktop\clock\clock\torus.h
+	"model.h"
+
+1496652654 source:c:\users\dom\desktop\clock(2)\clock\clock\cube.cpp
+	"cube.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\cube.h
+	"model.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\model.h
+	<vector>
+	<glm/glm.hpp>
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\precision.hpp
+	"setup.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\_swizzle.hpp
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\_swizzle_func.hpp
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec2.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec3.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec4_simd.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat2x3.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat2x4.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat3x2.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat3x4.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat4x2.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat4x3.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_mat4x4_simd.inl
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_vec1.inl
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_vector_relational_simd.inl
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\simd\exponential.h
+	"platform.h"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\simd\common.h
+	"platform.h"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\simd\geometric.h
+	"common.h"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_trigonometric_simd.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\common.hpp
+	"detail/func_common.hpp"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\type_half.inl
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_packing_simd.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1496652658 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\simd\integer.h
+
+1496652660 c:\users\dom\desktop\clock(2)\clock\clock\glfw\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\constants.h
+
+1496652654 source:c:\users\dom\desktop\clock(2)\clock\clock\detailed_cube.cpp
+	"detailed_cube.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\detailed_cube.h
+	"model.h"
+
+1496652654 source:c:\users\dom\desktop\clock(2)\clock\clock\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1496753464 source:c:\users\dom\desktop\clock(2)\clock\clock\main_file.cpp
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<lodepng.h>
+	"constants.h"
+	"allmodels.h"
+	<vector>
+	<string>
+	<iostream>
+	<sstream>
+	<fstream>
+
+1496652660 c:\users\dom\desktop\clock(2)\clock\clock\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1496652656 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\constants.inl
+	<limits>
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\quaternion_simd.inl
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\type_ptr.inl
+	<cstring>
+
+1496652656 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1496652656 c:\users\dom\desktop\clock(2)\clock\clock\glm\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\allmodels.h
+	"cube.h"
+	"detailed_cube.h"
+	"sphere.h"
+	"teapot.h"
+	"torus.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\sphere.h
+	"model.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\teapot.h
+	"model.h"
+
+1496652654 c:\users\dom\desktop\clock(2)\clock\clock\torus.h
+	"model.h"
+
+1496652654 source:c:\users\dom\desktop\clock(2)\clock\clock\model.cpp
+	"model.h"
+
+1496652654 source:c:\users\dom\desktop\clock(2)\clock\clock\sphere.cpp
+	"sphere.h"
+
+1496652654 source:c:\users\dom\desktop\clock(2)\clock\clock\teapot.cpp
+	"teapot.h"
+
+1496652654 source:c:\users\dom\desktop\clock(2)\clock\clock\torus.cpp
+	"torus.h"
+
+1496652654 source:c:\users\dom\desktop\git\zegar\cube.cpp
+	"cube.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\cube.h
+	"model.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\model.h
+	<vector>
+	<glm/glm.hpp>
+	<GLFW/glfw3.h>
+	"constants.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\glm.hpp
+	"detail/_fixes.hpp"
+	<cmath>
+	<climits>
+	<cfloat>
+	<limits>
+	<cassert>
+	"fwd.hpp"
+	"vec2.hpp"
+	"vec3.hpp"
+	"vec4.hpp"
+	"mat2x2.hpp"
+	"mat2x3.hpp"
+	"mat2x4.hpp"
+	"mat3x2.hpp"
+	"mat3x3.hpp"
+	"mat3x4.hpp"
+	"mat4x2.hpp"
+	"mat4x3.hpp"
+	"mat4x4.hpp"
+	"trigonometric.hpp"
+	"exponential.hpp"
+	"common.hpp"
+	"packing.hpp"
+	"geometric.hpp"
+	"matrix.hpp"
+	"vector_relational.hpp"
+	"integer.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\_fixes.hpp
+	<cmath>
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\fwd.hpp
+	"detail/type_int.hpp"
+	"detail/type_float.hpp"
+	"detail/type_vec.hpp"
+	"detail/type_mat.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_int.hpp
+	"setup.hpp"
+	<type_traits>
+	<cstdint>
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\setup.hpp
+	<cassert>
+	<cstddef>
+	"../simd/platform.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\simd\platform.h
+	<cuda.h>
+	<intrin.h>
+	<immintrin.h>
+	<immintrin.h>
+	<popcntintrin.h>
+	<nmmintrin.h>
+	<smmintrin.h>
+	<tmmintrin.h>
+	<pmmintrin.h>
+	<emmintrin.h>
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_float.hpp
+	"setup.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec.hpp
+	"precision.hpp"
+	"type_int.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\precision.hpp
+	"setup.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat.hpp
+	"precision.hpp"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\vec2.hpp
+	"detail/type_vec2.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec2.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec2.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\_swizzle.hpp
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\_swizzle_func.hpp
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec2.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\vec3.hpp
+	"detail/type_vec3.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec3.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec3.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec3.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\vec4.hpp
+	"detail/type_vec4.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec4.hpp
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec4.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec4.inl
+	"type_vec4_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec4_simd.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat2x2.hpp
+	"detail/type_mat2x2.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat2x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x2.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat2x2.inl
+	"func_matrix.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_matrix.hpp
+	"../detail/precision.hpp"
+	"../detail/setup.hpp"
+	"../detail/type_mat.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	"func_matrix.inl"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat2x3.hpp
+	"detail/type_mat2x3.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat2x3.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x3.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat2x3.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat2x4.hpp
+	"detail/type_mat2x4.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat2x4.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat2x4.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat2x4.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat3x2.hpp
+	"detail/type_mat3x2.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat3x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x2.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat3x2.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat3x3.hpp
+	"detail/type_mat3x3.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat3x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x3.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat3x3.inl
+	"func_matrix.hpp"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat3x4.hpp
+	"detail/type_mat3x4.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat3x4.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat3x4.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat3x4.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat4x2.hpp
+	"detail/type_mat4x2.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat4x2.hpp
+	"../fwd.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x2.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat4x2.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat4x3.hpp
+	"detail/type_mat4x3.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat4x3.hpp
+	"../fwd.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x3.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat4x3.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\mat4x4.hpp
+	"detail/type_mat4x4.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat4x4.hpp
+	"../fwd.hpp"
+	"type_vec4.hpp"
+	"type_mat.hpp"
+	<limits>
+	<cstddef>
+	"type_mat4x4.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat4x4.inl
+	"func_matrix.hpp"
+	"type_mat4x4_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_mat4x4_simd.inl
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_matrix.inl
+	"../geometric.hpp"
+	<limits>
+	"func_matrix_simd.inl"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\geometric.hpp
+	"detail/func_geometric.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_geometric.hpp
+	"type_vec3.hpp"
+	"func_geometric.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_geometric.inl
+	"func_exponential.hpp"
+	"func_common.hpp"
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"type_float.hpp"
+	"func_geometric_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_exponential.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	<cmath>
+	"func_exponential.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec1.hpp
+	"../fwd.hpp"
+	"type_vec.hpp"
+	"_swizzle.hpp"
+	"_swizzle_func.hpp"
+	<cstddef>
+	"type_vec1.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_vec1.inl
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_exponential.inl
+	"func_vector_relational.hpp"
+	"_vectorize.hpp"
+	<limits>
+	<cmath>
+	<cassert>
+	"func_exponential_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_vector_relational.hpp
+	"precision.hpp"
+	"setup.hpp"
+	"func_vector_relational.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_vector_relational.inl
+	<limits>
+	"func_vector_relational_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_vector_relational_simd.inl
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\_vectorize.hpp
+	"type_vec1.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_exponential_simd.inl
+	"../simd/exponential.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\simd\exponential.h
+	"platform.h"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_common.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"type_int.hpp"
+	"_fixes.hpp"
+	"func_common.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_common.inl
+	"func_vector_relational.hpp"
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"_vectorize.hpp"
+	<limits>
+	"func_common_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_common_simd.inl
+	"../simd/common.h"
+	<immintrin.h>
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\simd\common.h
+	"platform.h"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_geometric_simd.inl
+	"../simd/geometric.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\simd\geometric.h
+	"common.h"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_matrix_simd.inl
+	"type_mat4x4.hpp"
+	"func_geometric.hpp"
+	"../simd/matrix.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\simd\matrix.h
+	"geometric.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\trigonometric.hpp
+	"detail/func_trigonometric.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_trigonometric.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_trigonometric.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_trigonometric.inl
+	"_vectorize.hpp"
+	<cmath>
+	<limits>
+	"func_trigonometric_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_trigonometric_simd.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\exponential.hpp
+	"detail/func_exponential.hpp"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\common.hpp
+	"detail/func_common.hpp"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\packing.hpp
+	"detail/func_packing.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_packing.hpp
+	"type_vec2.hpp"
+	"type_vec4.hpp"
+	"func_packing.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_packing.inl
+	"func_common.hpp"
+	"type_half.hpp"
+	"../fwd.hpp"
+	"func_packing_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_half.hpp
+	"setup.hpp"
+	"type_half.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\type_half.inl
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_packing_simd.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\matrix.hpp
+	"detail/func_matrix.hpp"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\vector_relational.hpp
+	"detail/func_vector_relational.hpp"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\integer.hpp
+	"detail/func_integer.hpp"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_integer.hpp
+	"setup.hpp"
+	"precision.hpp"
+	"func_common.hpp"
+	"func_vector_relational.hpp"
+	"func_integer.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_integer.inl
+	"type_vec2.hpp"
+	"type_vec3.hpp"
+	"type_vec4.hpp"
+	"type_int.hpp"
+	"_vectorize.hpp"
+	<intrin.h>
+	<limits>
+	"func_integer_simd.inl"
+
+1496652658 c:\users\dom\desktop\git\zegar\glm\glm\detail\func_integer_simd.inl
+	"../simd/integer.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\simd\integer.h
+
+1496652660 c:\users\dom\desktop\git\zegar\glfw\include\glfw\glfw3.h
+	<stddef.h>
+	<stdint.h>
+	<OpenGL/gl3.h>
+	<OpenGL/gl3ext.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/glcorearb.h>
+	<GLES/gl.h>
+	<GLES/glext.h>
+	<GLES2/gl2.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl3.h>
+	<GLES2/gl2ext.h>
+	<GLES3/gl31.h>
+	<GLES2/gl2ext.h>
+	<vulkan/vulkan.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1496652654 c:\users\dom\desktop\git\zegar\constants.h
+
+1496652654 source:c:\users\dom\desktop\git\zegar\detailed_cube.cpp
+	"detailed_cube.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\detailed_cube.h
+	"model.h"
+
+1496652654 source:c:\users\dom\desktop\git\zegar\lodepng.cpp
+	"lodepng.h"
+	<stdio.h>
+	<stdlib.h>
+	<fstream>
+
+1496652654 c:\users\dom\desktop\git\zegar\lodepng.h
+	<string.h>
+	<vector>
+	<string>
+	"lodepng.h"
+	<iostream>
+	"lodepng.h"
+
+1496754820 source:c:\users\dom\desktop\git\zegar\main_file.cpp
+	<GL/glew.h>
+	<GLFW/glfw3.h>
+	<glm/glm.hpp>
+	<glm/gtc/type_ptr.hpp>
+	<glm/gtc/matrix_transform.hpp>
+	<stdlib.h>
+	<stdio.h>
+	<lodepng.h>
+	"constants.h"
+	"allmodels.h"
+	<vector>
+	<string>
+	<iostream>
+	<sstream>
+	<fstream>
+
+1496652660 c:\users\dom\desktop\git\zegar\glew\include\gl\glew.h
+	<stddef.h>
+	<inttypes.h>
+	<stdint.h>
+	<inttypes.h>
+	<Availability.h>
+	<OpenGL/glu.h>
+	<GL/glu.h>
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\gtc\type_ptr.hpp
+	"../gtc/quaternion.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../mat2x2.hpp"
+	"../mat2x3.hpp"
+	"../mat2x4.hpp"
+	"../mat3x2.hpp"
+	"../mat3x3.hpp"
+	"../mat3x4.hpp"
+	"../mat4x2.hpp"
+	"../mat4x3.hpp"
+	"../mat4x4.hpp"
+	<cstring>
+	"type_ptr.inl"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\gtc\quaternion.hpp
+	"../mat3x3.hpp"
+	"../mat4x4.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"quaternion.inl"
+
+1496652656 c:\users\dom\desktop\git\zegar\glm\glm\gtc\constants.hpp
+	"../detail/setup.hpp"
+	"constants.inl"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\gtc\constants.inl
+	<limits>
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\gtc\quaternion.inl
+	"../trigonometric.hpp"
+	"../geometric.hpp"
+	"../exponential.hpp"
+	<limits>
+	"quaternion_simd.inl"
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\gtc\quaternion_simd.inl
+
+1496652654 c:\users\dom\desktop\git\zegar\glm\glm\gtc\type_ptr.inl
+	<cstring>
+
+1496652656 c:\users\dom\desktop\git\zegar\glm\glm\gtc\matrix_transform.hpp
+	"../mat4x4.hpp"
+	"../vec2.hpp"
+	"../vec3.hpp"
+	"../vec4.hpp"
+	"../gtc/constants.hpp"
+	"matrix_transform.inl"
+
+1496652656 c:\users\dom\desktop\git\zegar\glm\glm\gtc\matrix_transform.inl
+	"../geometric.hpp"
+	"../trigonometric.hpp"
+	"../matrix.hpp"
+
+1496652654 c:\users\dom\desktop\git\zegar\allmodels.h
+	"cube.h"
+	"detailed_cube.h"
+	"sphere.h"
+	"teapot.h"
+	"torus.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\sphere.h
+	"model.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\teapot.h
+	"model.h"
+
+1496652654 c:\users\dom\desktop\git\zegar\torus.h
+	"model.h"
+
+1496652654 source:c:\users\dom\desktop\git\zegar\model.cpp
+	"model.h"
+
+1496652654 source:c:\users\dom\desktop\git\zegar\sphere.cpp
+	"sphere.h"
+
+1496652654 source:c:\users\dom\desktop\git\zegar\teapot.cpp
+	"teapot.h"
+
+1496652654 source:c:\users\dom\desktop\git\zegar\torus.cpp
+	"torus.h"
+
