@@ -1,4 +1,6 @@
-# clock
+Note: This project includes not only my work (but there are no comments what's mine and what belongs to my workmate).
+
+# clock model in OpenGL
 
 # Projekt zawiera:
 - poprawiona bryłę zegara wraz z tarcza
